@@ -6,7 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { nixpkgs, flake-utils, ... }:
+  outputs = { self, nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; };
@@ -21,10 +21,11 @@
         packages.default = (
           let
             name = "template";
+            revision = self.shortRev or self.dirtyRev or "unknown";
           in
         pkgs.maven.buildMavenPackage {
           pname = name;
-          version = "1.0-SNAPSHOT";
+          version = revision;
 
           src = ./.;
 
