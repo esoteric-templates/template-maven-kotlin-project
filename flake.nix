@@ -54,7 +54,7 @@
 
           meta = {
             description = "A template Kotlin project with Maven";
-            homepage = "https://gitlab.com/esoteric-templates/templates/template-maven-kotlin-project";
+            homepage = "https://gitlab.com/-/p/75734629";
           };
         });
       });
