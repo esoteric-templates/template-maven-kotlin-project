@@ -9,6 +9,8 @@
     <packaging>jar</packaging>
 
     <name>Template</name>
+    <description>A template Kotlin project with Maven</description>
+    <url>https://gitlab.com/-/p/75734629</url>
 
     <properties>
         <project.package>${project.groupId}.${project.artifactId}</project.package>
