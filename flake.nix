@@ -51,11 +51,6 @@
             makeWrapper ${pkgs.jre}/bin/java $out/bin/${name} \
               --add-flags "-jar $out/share/${name}/${name}-${revision}.jar"
           '';
-
-          meta = {
-            description = "A template Kotlin project with Maven";
-            homepage = "https://gitlab.com/-/p/75734629";
-          };
         });
       });
 }
