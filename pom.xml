@@ -19,6 +19,14 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Дима Ш.</name>
+            <email>dima.o.sh@proton.me</email>
+            <url>https://shdima.gitlab.io/</url>
+        </developer>
+    </developers>
+
     <properties>
         <project.package>${project.groupId}.${project.artifactId}</project.package>
         <project.mainClass>${project.package}.${project.name}Kt</project.mainClass>
